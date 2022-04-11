@@ -1,0 +1,15 @@
+t_moy = [14.9, 13.3, 13.1, 12.5, 13.0, 13.6, 13.7]
+annees = [2013, 2014, 2015, 2016, 2017, 2018, 2019]
+def mini(t_moy, annees):
+    n = t_moy[0]
+    a = 0
+    for i in range(len(t_moy)) :
+        if t_moy[i] < n:
+            m = t_moy[i]
+            n = t_moy[i]
+   
+    for i in range(len(annees)) :
+        a = t_moy.index(m)
+        p = annees[a]
+    return (m, p)
+print(mini(t_moy, annees))
