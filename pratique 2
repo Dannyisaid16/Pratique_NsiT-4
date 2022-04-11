@@ -1,0 +1,26 @@
+Moyenne simple 
+
+def moyenne(valeurs):
+    i = 0
+    n = 0
+    nb_valeurs = len(valeurs)
+    for i in valeurs :
+        n = n +  i 
+        
+    moyenne_final = n  / nb_valeurs
+    return moyenne_final 
+
+
+
+
+
+
+# tests
+
+def sont_proches(x, y):
+    return abs(x - y) < 10**-6
+
+assert sont_proches(moyenne([10, 20, 30, 40, 60, 110]), 45.0)
+assert sont_proches(moyenne([1, 3]), 2.0)
+assert sont_proches(moyenne([44, 51, 12, 72, 65, 34]), 46.333333333333336)
+
