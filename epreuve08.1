@@ -1,0 +1,7 @@
+def recherche(elt : int, tab : list):
+    for i in range(len(tab)):
+        if elt == tab[i]:
+            return i
+    else:
+        return -1
+print(recherche(1, [10, 12, 1, 56]))
