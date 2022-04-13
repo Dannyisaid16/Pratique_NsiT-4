@@ -1,0 +1,16 @@
+def rechercheMinMax(tableau : list):
+    resultat = {}
+    if tableau == []:
+        return {'min': None, 'max': None}
+    resultat['min'] = tab[0]
+    resultat['max'] = tab[0]
+    for i in range(len(tableau)):
+        if min > tableau[i] :
+            min = tableau[i]
+        if max < tableau[i]:
+            max = tableau[i]
+    resultat["min"] = min
+    resultat["max"] = max
+    return resultat
+    
+
