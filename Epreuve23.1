@@ -1,0 +1,11 @@
+def max_dico ( dico : dict ):
+    clé = ''
+    valeur = 0
+    for i in dico:
+        if valeur < dico[i]:
+            valeur = dico[i]
+            clé = i 
+    return clé,valeur
+            
+            
+    
