@@ -1,0 +1,7 @@
+def maxliste (tab : list ):
+    n = tab[0]
+    for i in range(len(tab)-1):
+        if n < tab[i] :
+            n = tab[i]
+    
+    return n 
