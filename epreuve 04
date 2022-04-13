@@ -1,0 +1,6 @@
+def recherche( tableau : list ):
+    n = []
+    for i in range (len(tableau)-1):
+        if tableau[i+1] == tableau[i] + 1 :
+            n.append([tableau[i], tableau[i+1]])
+    return n
